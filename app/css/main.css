@@ -44,6 +44,16 @@ body {
 a {
   text-decoration: none; }
 
+html {
+  font-size: 16px; }
+
+div {
+  -webkit-box-sizing: border-box;
+    -webkit-box-sizing--moz-box-sizing: border-box;
+      -webkit-box-sizing--moz-box-sizing--ms-box-sizing: border-box;
+        -webkit-box-sizing--moz-box-sizing--ms-box-sizing--o-box-sizing: border-box;
+          -webkit-box-sizing--moz-box-sizing--ms-box-sizing--o-box-sizing-box-sizing: border-box; }
+
 .clearfix:after {
   content: '';
   display: block;
@@ -63,6 +73,7 @@ header {
 .menu {
   padding-top: 50px; }
   .menu a {
+    font-size: 1rem;
     float: left;
     color: white;
     text-transform: uppercase; }
@@ -75,22 +86,23 @@ header {
       margin: 0; }
 
 .titel-page {
+  margin-top: 28%;
   margin-bottom: 10%;
   text-align: center;
   color: white; }
   .titel-page h3 {
     font-style: italic;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 5%; }
   .titel-page h1 {
     font-weight: bold;
-    font-size: 75px;
+    font-size: 4.6875rem;
     margin-bottom: 5%;
     text-transform: uppercase; }
   .titel-page button {
     width: 25%;
     padding: 2.1% 0;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 25%;
     background-color: #fed136;
     border: 1px solid #fed136;
@@ -99,7 +111,7 @@ header {
 
 .wrepper > h2 {
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: .8%; }
@@ -119,6 +131,55 @@ header {
   .service-description {
     text-align: center; }
     .service-description h4 {
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: bold;
       margin: 4% 0; }
+
+.content-project {
+  background-color: #f7f7f7; }
+
+.wrepper {
+  box-sizing: border-box; }
+  .wrepper h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 10%; }
+  .wrepper p {
+    padding-bottom: 3%; }
+
+.project {
+  margin: 0 -1.5%;
+  padding-bottom: 10%; }
+  .project--box {
+    display: inline-block;
+    margin: 15px 1.5%;
+    width: 30%;
+    background-color: #fff; }
+  .project--img {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    overflow: hidden; }
+    .project--img img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      height: 100%;
+      width: auto;
+      -webkit-transform: translate(-50%, -50%);
+        -webkit-transform--ms-transform: translate(-50%, -50%);
+          -webkit-transform--ms-transform-transform: translate(-50%, -50%); }
+  .project--title {
+    padding: 7% 0; }
+    .project--title > h4 {
+      font-weight: bold;
+      font-size: 1.125rem;
+      text-align: center;
+      margin-bottom: 1.8%; }
+    .project--title > p {
+      font-size: .875rem;
+      text-align: center;
+      font-style: italic;
+      color: #737373; }
