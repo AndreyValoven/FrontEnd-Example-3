@@ -183,3 +183,36 @@ header {
       text-align: center;
       font-style: italic;
       color: #737373; }
+
+.wrepper h2 {
+  margin: 10% 0 1%;
+  font-weight: bold; }
+
+.wrepper p {
+  margin-bottom: 8%; }
+
+.about-us--box {
+  display: block;
+  width: 70%;
+  margin-left: 10%; }
+  .about-us--box:nth-child(2n) {
+    margin-left: 43.2%; }
+    .about-us--box:nth-child(2n) .about-us--text {
+      text-align: left; }
+
+.about-us--text {
+  text-align: right;
+  display: inline-block;
+  width: 40%;
+  margin-right: 7%; }
+  .about-us--text h5, .about-us--text h6 {
+    margin-bottom: 3%;
+    font-weight: bold; }
+  .about-us--text p {
+    font-style: italic; }
+
+.about-us--img {
+  display: inline-block; }
+  .about-us--img img {
+    width: 75%;
+    height: auto; }
