@@ -5,9 +5,24 @@
     p
         margin-bottom: 8%
 
+.first
+    order: -1
+
 .about-us
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    flex-direction: column
+    justify-content: center
     &--box
-        display: block
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-wrap: wrap
         width: 70%
         margin-left: 10%
         &:nth-child(2n)
@@ -16,8 +31,8 @@
                 text-align: left
     &--text
         text-align: right   
-        display: inline-block
         width: 40%
+        min-width: 180px
         margin-right: 7%
         h5,h6
             margin-bottom: 3%
@@ -26,10 +41,23 @@
             font-style: italic
         
     &--img
-        display: inline-block
+        position: relative
         img
             width: 75%
             height: auto
         
         
-        
+@media screen and (max-width: 780px)
+    .about-us
+        &--text
+            text-align: left
+        &--box
+            justify-content: center
+            margin: 20px 10% 
+            width: 80%
+            &:nth-child(2n)
+                margin: 20px 10% 
+    
+    .first
+        order: 5
+

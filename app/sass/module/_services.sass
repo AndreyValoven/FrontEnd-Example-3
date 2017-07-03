@@ -11,12 +11,18 @@
         margin-bottom: 3%
         
 .service
+    &--box
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
     width: 30.66667%
+    min-width: 200px
     margin: 0 2% 10% 0
-    display: inline-block
     text-align: center
-    &:last-child
-        margin-right:  0
     &-description
         text-align: center
         h4

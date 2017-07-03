@@ -1,5 +1,5 @@
 header
-    background-image: url(../../img/bgi-header.png);
+    background-image: url(../../img/bgi-header.png)
     background-repeat: no-repeat
     background-position: center center
     background-attachment: fixed
@@ -19,6 +19,20 @@ header
         margin-left: 40px
         &:first-child
             margin: 0
+        
+.mob-icon
+    display: none
+    margin: 0 20px 0 0 
+    float: right
+    & > div
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+        box-sizing: border-box
+        width: 35px
+        height: 5px
+        background-color: #fff
+        margin: 6px 0
+        
         
 .titel-page
     margin-top: 28%
@@ -43,3 +57,11 @@ header
         border: 1px solid #fed136
         text-transform: uppercase
         color: #fff
+        
+@media screen and (max-width: 770px)
+    .menu
+        ul
+            display: none
+    .mob-icon
+        display: block
+        cursor: pointer
